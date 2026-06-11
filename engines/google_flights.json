@@ -1,0 +1,126 @@
+{
+  "key": "google_flights",
+  "name": "Flights",
+  "query_field": "q",
+  "groups": [
+    {
+      "key": "basic",
+      "title": "Basic Parameters",
+      "fields": [
+        {
+          "key": "q",
+          "type": "text",
+          "help_key": "serp.fields.q_help",
+          "label": "Keywords",
+          "help": "The search keyword used by the selected engine. Example: pizza."
+        },
+        {
+          "key": "departure_id",
+          "type": "text",
+          "required": true,
+          "label": "Departure IATA",
+          "help": "Origin airport IATA code"
+        },
+        {
+          "key": "arrival_id",
+          "type": "text",
+          "required": true,
+          "label": "Arrival IATA",
+          "help": "Destination airport IATA code"
+        },
+        {
+          "key": "travel_class",
+          "type": "select",
+          "default_value": "1",
+          "label": "Travel class",
+          "help": "Cabin class",
+          "options": [
+            {
+              "value": "1",
+              "label": "Economy"
+            },
+            {
+              "value": "2",
+              "label": "Premium Economy"
+            },
+            {
+              "value": "3",
+              "label": "Business"
+            },
+            {
+              "value": "4",
+              "label": "First"
+            }
+          ]
+        },
+        {
+          "key": "adults",
+          "type": "number",
+          "default_value": 1,
+          "label": "Adults",
+          "help": "Number of adult passengers",
+          "min": 1
+        },
+        {
+          "key": "no_cache",
+          "type": "switch",
+          "default_value": false,
+          "label": "No Cache",
+          "help": "When enabled, the adapter returns a fresh preview result."
+        }
+      ]
+    },
+    {
+      "key": "round_trip_dates",
+      "title": "Round-trip dates",
+      "fields": [
+        {
+          "key": "trip_dates",
+          "type": "date_range",
+          "required": true,
+          "label": "Trip dates",
+          "help": "Departure and return dates",
+          "range_keys": {
+            "start": "outbound_date",
+            "end": "return_date"
+          }
+        }
+      ]
+    },
+    {
+      "key": "passenger_detail",
+      "title": "Passenger detail",
+      "fields": [
+        {
+          "key": "children",
+          "type": "number",
+          "default_value": 0,
+          "label": "Children",
+          "help": "Number of child passengers",
+          "min": 0
+        },
+        {
+          "key": "infants_in_seat",
+          "type": "number",
+          "default_value": 0,
+          "label": "Infants in seat",
+          "help": "Infants occupying their own seat",
+          "min": 0
+        },
+        {
+          "key": "infants_on_lap",
+          "type": "number",
+          "default_value": 0,
+          "label": "Infants on lap",
+          "help": "Infants travelling on a lap",
+          "min": 0
+        }
+      ]
+    }
+  ],
+  "category": {
+    "key": "google",
+    "name": "Google"
+  },
+  "is_default_engine": false
+}

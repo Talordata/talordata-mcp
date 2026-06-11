@@ -1,0 +1,1087 @@
+{
+  "key": "duckduckgo",
+  "name": "Search",
+  "query_field": "q",
+  "groups": [
+    {
+      "key": "basic",
+      "title": "Basic Parameters",
+      "fields": [
+        {
+          "key": "q",
+          "type": "text",
+          "required": true,
+          "help_key": "serp.fields.q_help",
+          "label": "Search Query",
+          "help": "The search keyword used by the selected engine. Example: pizza."
+        }
+      ]
+    },
+    {
+      "key": "localization",
+      "title": "Localization",
+      "fields": [
+        {
+          "key": "kl",
+          "type": "select",
+          "default_value": "us-en",
+          "label": "Region",
+          "help": "Sets the DuckDuckGo region and language.",
+          "options": [
+            {
+              "value": "af-en",
+              "label": "Afghanistan (EN)"
+            },
+            {
+              "value": "al-en",
+              "label": "Albania (EN)"
+            },
+            {
+              "value": "dz-en",
+              "label": "Algeria (EN)"
+            },
+            {
+              "value": "as-en",
+              "label": "American Samoa (EN)"
+            },
+            {
+              "value": "ad-en",
+              "label": "Andorra (EN)"
+            },
+            {
+              "value": "ao-en",
+              "label": "Angola (EN)"
+            },
+            {
+              "value": "ai-en",
+              "label": "Anguilla (EN)"
+            },
+            {
+              "value": "aq-en",
+              "label": "Antarctica (EN)"
+            },
+            {
+              "value": "ag-en",
+              "label": "Antigua and Barbuda (EN)"
+            },
+            {
+              "value": "ar-en",
+              "label": "Argentina (EN)"
+            },
+            {
+              "value": "am-en",
+              "label": "Armenia (EN)"
+            },
+            {
+              "value": "aw-en",
+              "label": "Aruba (EN)"
+            },
+            {
+              "value": "au-en",
+              "label": "Australia (EN)"
+            },
+            {
+              "value": "at-en",
+              "label": "Austria (EN)"
+            },
+            {
+              "value": "az-en",
+              "label": "Azerbaijan (EN)"
+            },
+            {
+              "value": "bs-en",
+              "label": "Bahamas (EN)"
+            },
+            {
+              "value": "bh-en",
+              "label": "Bahrain (EN)"
+            },
+            {
+              "value": "bd-en",
+              "label": "Bangladesh (EN)"
+            },
+            {
+              "value": "bb-en",
+              "label": "Barbados (EN)"
+            },
+            {
+              "value": "by-en",
+              "label": "Belarus (EN)"
+            },
+            {
+              "value": "be-en",
+              "label": "Belgium (EN)"
+            },
+            {
+              "value": "bz-en",
+              "label": "Belize (EN)"
+            },
+            {
+              "value": "bj-en",
+              "label": "Benin (EN)"
+            },
+            {
+              "value": "bm-en",
+              "label": "Bermuda (EN)"
+            },
+            {
+              "value": "bt-en",
+              "label": "Bhutan (EN)"
+            },
+            {
+              "value": "bo-en",
+              "label": "Bolivia (EN)"
+            },
+            {
+              "value": "ba-en",
+              "label": "Bosnia and Herzegovina (EN)"
+            },
+            {
+              "value": "bw-en",
+              "label": "Botswana (EN)"
+            },
+            {
+              "value": "bv-en",
+              "label": "Bouvet Island (EN)"
+            },
+            {
+              "value": "br-en",
+              "label": "Brazil (EN)"
+            },
+            {
+              "value": "io-en",
+              "label": "British Indian Ocean Territory (EN)"
+            },
+            {
+              "value": "bn-en",
+              "label": "Brunei Darussalam (EN)"
+            },
+            {
+              "value": "bg-en",
+              "label": "Bulgaria (EN)"
+            },
+            {
+              "value": "bf-en",
+              "label": "Burkina Faso (EN)"
+            },
+            {
+              "value": "bi-en",
+              "label": "Burundi (EN)"
+            },
+            {
+              "value": "kh-en",
+              "label": "Cambodia (EN)"
+            },
+            {
+              "value": "cm-en",
+              "label": "Cameroon (EN)"
+            },
+            {
+              "value": "ca-en",
+              "label": "Canada (EN)"
+            },
+            {
+              "value": "cv-en",
+              "label": "Cape Verde (EN)"
+            },
+            {
+              "value": "ky-en",
+              "label": "Cayman Islands (EN)"
+            },
+            {
+              "value": "cf-en",
+              "label": "Central African Republic (EN)"
+            },
+            {
+              "value": "td-en",
+              "label": "Chad (EN)"
+            },
+            {
+              "value": "cl-en",
+              "label": "Chile (EN)"
+            },
+            {
+              "value": "cn-en",
+              "label": "China (EN)"
+            },
+            {
+              "value": "cx-en",
+              "label": "Christmas Island (EN)"
+            },
+            {
+              "value": "cc-en",
+              "label": "Cocos (Keeling) Islands (EN)"
+            },
+            {
+              "value": "co-en",
+              "label": "Colombia (EN)"
+            },
+            {
+              "value": "km-en",
+              "label": "Comoros (EN)"
+            },
+            {
+              "value": "cg-en",
+              "label": "Congo (EN)"
+            },
+            {
+              "value": "cd-en",
+              "label": "Congo, the Democratic Republic of the (EN)"
+            },
+            {
+              "value": "ck-en",
+              "label": "Cook Islands (EN)"
+            },
+            {
+              "value": "cr-en",
+              "label": "Costa Rica (EN)"
+            },
+            {
+              "value": "ci-en",
+              "label": "Cote D'ivoire (EN)"
+            },
+            {
+              "value": "hr-en",
+              "label": "Croatia (EN)"
+            },
+            {
+              "value": "cu-en",
+              "label": "Cuba (EN)"
+            },
+            {
+              "value": "cy-en",
+              "label": "Cyprus (EN)"
+            },
+            {
+              "value": "cz-en",
+              "label": "Czech Republic (EN)"
+            },
+            {
+              "value": "dk-en",
+              "label": "Denmark (EN)"
+            },
+            {
+              "value": "dj-en",
+              "label": "Djibouti (EN)"
+            },
+            {
+              "value": "dm-en",
+              "label": "Dominica (EN)"
+            },
+            {
+              "value": "do-en",
+              "label": "Dominican Republic (EN)"
+            },
+            {
+              "value": "ec-en",
+              "label": "Ecuador (EN)"
+            },
+            {
+              "value": "eg-en",
+              "label": "Egypt (EN)"
+            },
+            {
+              "value": "sv-en",
+              "label": "El Salvador (EN)"
+            },
+            {
+              "value": "gq-en",
+              "label": "Equatorial Guinea (EN)"
+            },
+            {
+              "value": "er-en",
+              "label": "Eritrea (EN)"
+            },
+            {
+              "value": "ee-en",
+              "label": "Estonia (EN)"
+            },
+            {
+              "value": "et-en",
+              "label": "Ethiopia (EN)"
+            },
+            {
+              "value": "fk-en",
+              "label": "Falkland Islands (Malvinas) (EN)"
+            },
+            {
+              "value": "fo-en",
+              "label": "Faroe Islands (EN)"
+            },
+            {
+              "value": "fj-en",
+              "label": "Fiji (EN)"
+            },
+            {
+              "value": "fi-en",
+              "label": "Finland (EN)"
+            },
+            {
+              "value": "fr-en",
+              "label": "France (EN)"
+            },
+            {
+              "value": "gf-en",
+              "label": "French Guiana (EN)"
+            },
+            {
+              "value": "pf-en",
+              "label": "French Polynesia (EN)"
+            },
+            {
+              "value": "tf-en",
+              "label": "French Southern Territories (EN)"
+            },
+            {
+              "value": "ga-en",
+              "label": "Gabon (EN)"
+            },
+            {
+              "value": "gm-en",
+              "label": "Gambia (EN)"
+            },
+            {
+              "value": "ge-en",
+              "label": "Georgia (EN)"
+            },
+            {
+              "value": "de-en",
+              "label": "Germany (EN)"
+            },
+            {
+              "value": "gh-en",
+              "label": "Ghana (EN)"
+            },
+            {
+              "value": "gi-en",
+              "label": "Gibraltar (EN)"
+            },
+            {
+              "value": "gr-en",
+              "label": "Greece (EN)"
+            },
+            {
+              "value": "gl-en",
+              "label": "Greenland (EN)"
+            },
+            {
+              "value": "gd-en",
+              "label": "Grenada (EN)"
+            },
+            {
+              "value": "gp-en",
+              "label": "Guadeloupe (EN)"
+            },
+            {
+              "value": "gu-en",
+              "label": "Guam (EN)"
+            },
+            {
+              "value": "gt-en",
+              "label": "Guatemala (EN)"
+            },
+            {
+              "value": "gg-en",
+              "label": "Guernsey (EN)"
+            },
+            {
+              "value": "gn-en",
+              "label": "Guinea (EN)"
+            },
+            {
+              "value": "gw-en",
+              "label": "Guinea-Bissau (EN)"
+            },
+            {
+              "value": "gy-en",
+              "label": "Guyana (EN)"
+            },
+            {
+              "value": "ht-en",
+              "label": "Haiti (EN)"
+            },
+            {
+              "value": "hm-en",
+              "label": "Heard Island and Mcdonald Islands (EN)"
+            },
+            {
+              "value": "va-en",
+              "label": "Holy See (Vatican City State) (EN)"
+            },
+            {
+              "value": "hn-en",
+              "label": "Honduras (EN)"
+            },
+            {
+              "value": "hk-en",
+              "label": "Hong Kong (EN)"
+            },
+            {
+              "value": "hu-en",
+              "label": "Hungary (EN)"
+            },
+            {
+              "value": "is-en",
+              "label": "Iceland (EN)"
+            },
+            {
+              "value": "in-en",
+              "label": "India (EN)"
+            },
+            {
+              "value": "id-en",
+              "label": "Indonesia (EN)"
+            },
+            {
+              "value": "ir-en",
+              "label": "Iran, Islamic Republic of (EN)"
+            },
+            {
+              "value": "iq-en",
+              "label": "Iraq (EN)"
+            },
+            {
+              "value": "ie-en",
+              "label": "Ireland (EN)"
+            },
+            {
+              "value": "im-en",
+              "label": "Isle of Man (EN)"
+            },
+            {
+              "value": "il-en",
+              "label": "Israel (EN)"
+            },
+            {
+              "value": "it-en",
+              "label": "Italy (EN)"
+            },
+            {
+              "value": "je-en",
+              "label": "Jersey (EN)"
+            },
+            {
+              "value": "jm-en",
+              "label": "Jamaica (EN)"
+            },
+            {
+              "value": "jp-en",
+              "label": "Japan (EN)"
+            },
+            {
+              "value": "jo-en",
+              "label": "Jordan (EN)"
+            },
+            {
+              "value": "kz-en",
+              "label": "Kazakhstan (EN)"
+            },
+            {
+              "value": "ke-en",
+              "label": "Kenya (EN)"
+            },
+            {
+              "value": "ki-en",
+              "label": "Kiribati (EN)"
+            },
+            {
+              "value": "kp-en",
+              "label": "Korea, Democratic People's Republic of (EN)"
+            },
+            {
+              "value": "kr-en",
+              "label": "Korea, Republic of (EN)"
+            },
+            {
+              "value": "kw-en",
+              "label": "Kuwait (EN)"
+            },
+            {
+              "value": "kg-en",
+              "label": "Kyrgyzstan (EN)"
+            },
+            {
+              "value": "la-en",
+              "label": "Lao People's Democratic Republic (EN)"
+            },
+            {
+              "value": "lv-en",
+              "label": "Latvia (EN)"
+            },
+            {
+              "value": "lb-en",
+              "label": "Lebanon (EN)"
+            },
+            {
+              "value": "ls-en",
+              "label": "Lesotho (EN)"
+            },
+            {
+              "value": "lr-en",
+              "label": "Liberia (EN)"
+            },
+            {
+              "value": "ly-en",
+              "label": "Libyan Arab Jamahiriya (EN)"
+            },
+            {
+              "value": "li-en",
+              "label": "Liechtenstein (EN)"
+            },
+            {
+              "value": "lt-en",
+              "label": "Lithuania (EN)"
+            },
+            {
+              "value": "lu-en",
+              "label": "Luxembourg (EN)"
+            },
+            {
+              "value": "mo-en",
+              "label": "Macao (EN)"
+            },
+            {
+              "value": "mk-en",
+              "label": "Macedonia, the Former Yugosalv Republic of (EN)"
+            },
+            {
+              "value": "mg-en",
+              "label": "Madagascar (EN)"
+            },
+            {
+              "value": "mw-en",
+              "label": "Malawi (EN)"
+            },
+            {
+              "value": "my-en",
+              "label": "Malaysia (EN)"
+            },
+            {
+              "value": "mv-en",
+              "label": "Maldives (EN)"
+            },
+            {
+              "value": "ml-en",
+              "label": "Mali (EN)"
+            },
+            {
+              "value": "mt-en",
+              "label": "Malta (EN)"
+            },
+            {
+              "value": "mh-en",
+              "label": "Marshall Islands (EN)"
+            },
+            {
+              "value": "mq-en",
+              "label": "Martinique (EN)"
+            },
+            {
+              "value": "mr-en",
+              "label": "Mauritania (EN)"
+            },
+            {
+              "value": "mu-en",
+              "label": "Mauritius (EN)"
+            },
+            {
+              "value": "yt-en",
+              "label": "Mayotte (EN)"
+            },
+            {
+              "value": "mx-en",
+              "label": "Mexico (EN)"
+            },
+            {
+              "value": "fm-en",
+              "label": "Micronesia, Federated States of (EN)"
+            },
+            {
+              "value": "md-en",
+              "label": "Moldova, Republic of (EN)"
+            },
+            {
+              "value": "mc-en",
+              "label": "Monaco (EN)"
+            },
+            {
+              "value": "mn-en",
+              "label": "Mongolia (EN)"
+            },
+            {
+              "value": "me-en",
+              "label": "Montenegro (EN)"
+            },
+            {
+              "value": "ms-en",
+              "label": "Montserrat (EN)"
+            },
+            {
+              "value": "ma-en",
+              "label": "Morocco (EN)"
+            },
+            {
+              "value": "mz-en",
+              "label": "Mozambique (EN)"
+            },
+            {
+              "value": "mm-en",
+              "label": "Myanmar (EN)"
+            },
+            {
+              "value": "na-en",
+              "label": "Namibia (EN)"
+            },
+            {
+              "value": "nr-en",
+              "label": "Nauru (EN)"
+            },
+            {
+              "value": "np-en",
+              "label": "Nepal (EN)"
+            },
+            {
+              "value": "nl-en",
+              "label": "Netherlands (EN)"
+            },
+            {
+              "value": "an-en",
+              "label": "Netherlands Antilles (EN)"
+            },
+            {
+              "value": "nc-en",
+              "label": "New Caledonia (EN)"
+            },
+            {
+              "value": "nz-en",
+              "label": "New Zealand (EN)"
+            },
+            {
+              "value": "ni-en",
+              "label": "Nicaragua (EN)"
+            },
+            {
+              "value": "ne-en",
+              "label": "Niger (EN)"
+            },
+            {
+              "value": "ng-en",
+              "label": "Nigeria (EN)"
+            },
+            {
+              "value": "nu-en",
+              "label": "Niue (EN)"
+            },
+            {
+              "value": "nf-en",
+              "label": "Norfolk Island (EN)"
+            },
+            {
+              "value": "mp-en",
+              "label": "Northern Mariana Islands (EN)"
+            },
+            {
+              "value": "no-en",
+              "label": "Norway (EN)"
+            },
+            {
+              "value": "om-en",
+              "label": "Oman (EN)"
+            },
+            {
+              "value": "pk-en",
+              "label": "Pakistan (EN)"
+            },
+            {
+              "value": "pw-en",
+              "label": "Palau (EN)"
+            },
+            {
+              "value": "ps-en",
+              "label": "Palestinian Territory, Occupied (EN)"
+            },
+            {
+              "value": "pa-en",
+              "label": "Panama (EN)"
+            },
+            {
+              "value": "pg-en",
+              "label": "Papua New Guinea (EN)"
+            },
+            {
+              "value": "py-en",
+              "label": "Paraguay (EN)"
+            },
+            {
+              "value": "pe-en",
+              "label": "Peru (EN)"
+            },
+            {
+              "value": "ph-en",
+              "label": "Philippines (EN)"
+            },
+            {
+              "value": "pn-en",
+              "label": "Pitcairn (EN)"
+            },
+            {
+              "value": "pl-en",
+              "label": "Poland (EN)"
+            },
+            {
+              "value": "pt-en",
+              "label": "Portugal (EN)"
+            },
+            {
+              "value": "pr-en",
+              "label": "Puerto Rico (EN)"
+            },
+            {
+              "value": "qa-en",
+              "label": "Qatar (EN)"
+            },
+            {
+              "value": "re-en",
+              "label": "Reunion (EN)"
+            },
+            {
+              "value": "ro-en",
+              "label": "Romania (EN)"
+            },
+            {
+              "value": "ru-en",
+              "label": "Russian Federation (EN)"
+            },
+            {
+              "value": "rw-en",
+              "label": "Rwanda (EN)"
+            },
+            {
+              "value": "sh-en",
+              "label": "Saint Helena (EN)"
+            },
+            {
+              "value": "kn-en",
+              "label": "Saint Kitts and Nevis (EN)"
+            },
+            {
+              "value": "lc-en",
+              "label": "Saint Lucia (EN)"
+            },
+            {
+              "value": "pm-en",
+              "label": "Saint Pierre and Miquelon (EN)"
+            },
+            {
+              "value": "vc-en",
+              "label": "Saint Vincent and the Grenadines (EN)"
+            },
+            {
+              "value": "ws-en",
+              "label": "Samoa (EN)"
+            },
+            {
+              "value": "sm-en",
+              "label": "San Marino (EN)"
+            },
+            {
+              "value": "st-en",
+              "label": "Sao Tome and Principe (EN)"
+            },
+            {
+              "value": "sa-en",
+              "label": "Saudi Arabia (EN)"
+            },
+            {
+              "value": "sn-en",
+              "label": "Senegal (EN)"
+            },
+            {
+              "value": "rs-en",
+              "label": "Serbia (EN)"
+            },
+            {
+              "value": "sc-en",
+              "label": "Seychelles (EN)"
+            },
+            {
+              "value": "sl-en",
+              "label": "Sierra Leone (EN)"
+            },
+            {
+              "value": "sg-en",
+              "label": "Singapore (EN)"
+            },
+            {
+              "value": "sk-en",
+              "label": "Slovakia (EN)"
+            },
+            {
+              "value": "si-en",
+              "label": "Slovenia (EN)"
+            },
+            {
+              "value": "sb-en",
+              "label": "Solomon Islands (EN)"
+            },
+            {
+              "value": "so-en",
+              "label": "Somalia (EN)"
+            },
+            {
+              "value": "za-en",
+              "label": "South Africa (EN)"
+            },
+            {
+              "value": "gs-en",
+              "label": "South Georgia and the South Sandwich Islands (EN)"
+            },
+            {
+              "value": "es-en",
+              "label": "Spain (EN)"
+            },
+            {
+              "value": "lk-en",
+              "label": "Sri Lanka (EN)"
+            },
+            {
+              "value": "sd-en",
+              "label": "Sudan (EN)"
+            },
+            {
+              "value": "sr-en",
+              "label": "Suriname (EN)"
+            },
+            {
+              "value": "sj-en",
+              "label": "Svalbard and Jan Mayen (EN)"
+            },
+            {
+              "value": "sz-en",
+              "label": "Swaziland (EN)"
+            },
+            {
+              "value": "se-en",
+              "label": "Sweden (EN)"
+            },
+            {
+              "value": "ch-en",
+              "label": "Switzerland (EN)"
+            },
+            {
+              "value": "sy-en",
+              "label": "Syrian Arab Republic (EN)"
+            },
+            {
+              "value": "tw-en",
+              "label": "Taiwan, Province of China (EN)"
+            },
+            {
+              "value": "tj-en",
+              "label": "Tajikistan (EN)"
+            },
+            {
+              "value": "tz-en",
+              "label": "Tanzania, United Republic of (EN)"
+            },
+            {
+              "value": "th-en",
+              "label": "Thailand (EN)"
+            },
+            {
+              "value": "tl-en",
+              "label": "Timor-Leste (EN)"
+            },
+            {
+              "value": "tg-en",
+              "label": "Togo (EN)"
+            },
+            {
+              "value": "tk-en",
+              "label": "Tokelau (EN)"
+            },
+            {
+              "value": "to-en",
+              "label": "Tonga (EN)"
+            },
+            {
+              "value": "tt-en",
+              "label": "Trinidad and Tobago (EN)"
+            },
+            {
+              "value": "tn-en",
+              "label": "Tunisia (EN)"
+            },
+            {
+              "value": "tr-en",
+              "label": "Turkiye (EN)"
+            },
+            {
+              "value": "tm-en",
+              "label": "Turkmenistan (EN)"
+            },
+            {
+              "value": "tc-en",
+              "label": "Turks and Caicos Islands (EN)"
+            },
+            {
+              "value": "tv-en",
+              "label": "Tuvalu (EN)"
+            },
+            {
+              "value": "ug-en",
+              "label": "Uganda (EN)"
+            },
+            {
+              "value": "ua-en",
+              "label": "Ukraine (EN)"
+            },
+            {
+              "value": "ae-en",
+              "label": "United Arab Emirates (EN)"
+            },
+            {
+              "value": "uk-en",
+              "label": "United Kingdom (EN)"
+            },
+            {
+              "value": "gb-en",
+              "label": "United Kingdom (EN)"
+            },
+            {
+              "value": "us-en",
+              "label": "United States (EN)"
+            },
+            {
+              "value": "um-en",
+              "label": "United States Minor Outlying Islands (EN)"
+            },
+            {
+              "value": "uy-en",
+              "label": "Uruguay (EN)"
+            },
+            {
+              "value": "uz-en",
+              "label": "Uzbekistan (EN)"
+            },
+            {
+              "value": "vu-en",
+              "label": "Vanuatu (EN)"
+            },
+            {
+              "value": "ve-en",
+              "label": "Venezuela (EN)"
+            },
+            {
+              "value": "vn-en",
+              "label": "Viet Nam (EN)"
+            },
+            {
+              "value": "vg-en",
+              "label": "Virgin Islands, British (EN)"
+            },
+            {
+              "value": "vi-en",
+              "label": "Virgin Islands, U.S. (EN)"
+            },
+            {
+              "value": "wf-en",
+              "label": "Wallis and Futuna (EN)"
+            },
+            {
+              "value": "eh-en",
+              "label": "Western Sahara (EN)"
+            },
+            {
+              "value": "ye-en",
+              "label": "Yemen (EN)"
+            },
+            {
+              "value": "zm-en",
+              "label": "Zambia (EN)"
+            },
+            {
+              "value": "zw-en",
+              "label": "Zimbabwe (EN)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "advanced_filters",
+      "title": "Advanced Filters",
+      "fields": [
+        {
+          "key": "df",
+          "type": "select",
+          "label": "Date Range",
+          "help": "Filters DuckDuckGo results by date range.",
+          "options": [
+            {
+              "value": "",
+              "label": "Any time"
+            },
+            {
+              "value": "d",
+              "label": "Past day"
+            },
+            {
+              "value": "w",
+              "label": "Past week"
+            },
+            {
+              "value": "m",
+              "label": "Past month"
+            },
+            {
+              "value": "y",
+              "label": "Past year"
+            }
+          ]
+        },
+        {
+          "key": "kp",
+          "type": "select",
+          "label": "Safe Search",
+          "help": "Controls DuckDuckGo safe search level.",
+          "options": [
+            {
+              "value": "1",
+              "label": "Strict"
+            },
+            {
+              "value": "-1",
+              "label": "Moderate"
+            },
+            {
+              "value": "-2",
+              "label": "Off"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "pagination_talor",
+      "title": "Pagination / Talor Parameters",
+      "fields": [
+        {
+          "key": "start",
+          "type": "number",
+          "default_value": 0,
+          "label": "Start Position",
+          "help": "Sets the starting offset for paginated results."
+        },
+        {
+          "key": "no_cache",
+          "type": "switch",
+          "default_value": false,
+          "help_key": "serp.fields.no_cache_help",
+          "label": "No Cache",
+          "help": "When enabled, the adapter returns a fresh preview result."
+        }
+      ]
+    }
+  ]
+}

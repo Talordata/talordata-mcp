@@ -1,0 +1,514 @@
+{
+  "key": "bing_videos",
+  "name": "Videos",
+  "query_field": "q",
+  "groups": [
+    {
+      "key": "basic",
+      "title": "Basic Parameters",
+      "fields": [
+        {
+          "key": "q",
+          "type": "text",
+          "required": true,
+          "label": "Search Query",
+          "help": "The search keyword used by the selected engine. Example: pizza."
+        },
+        {
+          "key": "cc",
+          "type": "select",
+          "default_value": "us",
+          "label": "Country/Region",
+          "help": "Sets the country or region code for Bing results. Example: us.",
+          "options": [
+            {
+              "value": "AR",
+              "label": "Argentina"
+            },
+            {
+              "value": "AU",
+              "label": "Australia"
+            },
+            {
+              "value": "AT",
+              "label": "Austria"
+            },
+            {
+              "value": "BE",
+              "label": "Belgium"
+            },
+            {
+              "value": "BR",
+              "label": "Brazil"
+            },
+            {
+              "value": "CA",
+              "label": "Canada"
+            },
+            {
+              "value": "CL",
+              "label": "Chile"
+            },
+            {
+              "value": "DK",
+              "label": "Denmark"
+            },
+            {
+              "value": "FI",
+              "label": "Finland"
+            },
+            {
+              "value": "FR",
+              "label": "France"
+            },
+            {
+              "value": "DE",
+              "label": "Germany"
+            },
+            {
+              "value": "HK",
+              "label": "Hong Kong SAR"
+            },
+            {
+              "value": "IN",
+              "label": "India"
+            },
+            {
+              "value": "ID",
+              "label": "Indonesia"
+            },
+            {
+              "value": "IT",
+              "label": "Italy"
+            },
+            {
+              "value": "JP",
+              "label": "Japan"
+            },
+            {
+              "value": "KR",
+              "label": "Korea"
+            },
+            {
+              "value": "MY",
+              "label": "Malaysia"
+            },
+            {
+              "value": "MX",
+              "label": "Mexico"
+            },
+            {
+              "value": "NL",
+              "label": "Netherlands"
+            },
+            {
+              "value": "NZ",
+              "label": "New Zealand"
+            },
+            {
+              "value": "NO",
+              "label": "Norway"
+            },
+            {
+              "value": "CN",
+              "label": "People's Republic of China"
+            },
+            {
+              "value": "PL",
+              "label": "Poland"
+            },
+            {
+              "value": "PT",
+              "label": "Portugal"
+            },
+            {
+              "value": "PH",
+              "label": "Republic of the Philippines"
+            },
+            {
+              "value": "RU",
+              "label": "Russia"
+            },
+            {
+              "value": "SA",
+              "label": "Saudi Arabia"
+            },
+            {
+              "value": "ZA",
+              "label": "South Africa"
+            },
+            {
+              "value": "ES",
+              "label": "Spain"
+            },
+            {
+              "value": "SE",
+              "label": "Sweden"
+            },
+            {
+              "value": "CH",
+              "label": "Switzerland"
+            },
+            {
+              "value": "TW",
+              "label": "Taiwan"
+            },
+            {
+              "value": "TR",
+              "label": "T眉rkiye"
+            },
+            {
+              "value": "GB",
+              "label": "United Kingdom"
+            },
+            {
+              "value": "US",
+              "label": "United States"
+            }
+          ]
+        },
+        {
+          "key": "mkt",
+          "type": "select",
+          "default_value": "en-us",
+          "label": "Market",
+          "help": "Sets the Bing market and language. Example: en-US.",
+          "options": [
+            {
+              "value": "es-AR",
+              "label": "es-AR - Spanish"
+            },
+            {
+              "value": "en-AU",
+              "label": "en-AU - English"
+            },
+            {
+              "value": "de-AT",
+              "label": "de-AT - German"
+            },
+            {
+              "value": "nl-BE",
+              "label": "nl-BE - Dutch"
+            },
+            {
+              "value": "fr-BE",
+              "label": "fr-BE - French"
+            },
+            {
+              "value": "pt-BR",
+              "label": "pt-BR - Portuguese"
+            },
+            {
+              "value": "en-CA",
+              "label": "en-CA - English"
+            },
+            {
+              "value": "fr-CA",
+              "label": "fr-CA - French"
+            },
+            {
+              "value": "es-CL",
+              "label": "es-CL - Spanish"
+            },
+            {
+              "value": "da-DK",
+              "label": "da-DK - Danish"
+            },
+            {
+              "value": "fi-FI",
+              "label": "fi-FI - Finnish"
+            },
+            {
+              "value": "fr-FR",
+              "label": "fr-FR - French"
+            },
+            {
+              "value": "de-DE",
+              "label": "de-DE - German"
+            },
+            {
+              "value": "zh-HK",
+              "label": "zh-HK - Traditional Chinese"
+            },
+            {
+              "value": "en-IN",
+              "label": "en-IN - English"
+            },
+            {
+              "value": "en-ID",
+              "label": "en-ID - English"
+            },
+            {
+              "value": "it-IT",
+              "label": "it-IT - Italian"
+            },
+            {
+              "value": "ja-JP",
+              "label": "ja-JP - Japanese"
+            },
+            {
+              "value": "ko-KR",
+              "label": "ko-KR - Korean"
+            },
+            {
+              "value": "en-MY",
+              "label": "en-MY - English"
+            },
+            {
+              "value": "es-MX",
+              "label": "es-MX - Spanish"
+            },
+            {
+              "value": "nl-NL",
+              "label": "nl-NL - Dutch"
+            },
+            {
+              "value": "en-NZ",
+              "label": "en-NZ - English"
+            },
+            {
+              "value": "no-NO",
+              "label": "no-NO - Norwegian"
+            },
+            {
+              "value": "zh-CN",
+              "label": "zh-CN - Chinese"
+            },
+            {
+              "value": "pl-PL",
+              "label": "pl-PL - Polish"
+            },
+            {
+              "value": "en-PH",
+              "label": "en-PH - English"
+            },
+            {
+              "value": "ru-RU",
+              "label": "ru-RU - Russian"
+            },
+            {
+              "value": "en-ZA",
+              "label": "en-ZA - English"
+            },
+            {
+              "value": "es-ES",
+              "label": "es-ES - Spanish"
+            },
+            {
+              "value": "sv-SE",
+              "label": "sv-SE - Swedish"
+            },
+            {
+              "value": "fr-CH",
+              "label": "fr-CH - French"
+            },
+            {
+              "value": "de-CH",
+              "label": "de-CH - German"
+            },
+            {
+              "value": "zh-TW",
+              "label": "zh-TW - Traditional Chinese"
+            },
+            {
+              "value": "tr-TR",
+              "label": "tr-TR - Turkish"
+            },
+            {
+              "value": "en-GB",
+              "label": "en-GB - English"
+            },
+            {
+              "value": "en-US",
+              "label": "en-US - English"
+            },
+            {
+              "value": "es-US",
+              "label": "es-US - Spanish"
+            }
+          ]
+        },
+        {
+          "key": "no_cache",
+          "type": "switch",
+          "default_value": false,
+          "label": "No Cache",
+          "help": "When enabled, the adapter returns a fresh preview result."
+        }
+      ]
+    },
+    {
+      "key": "advanced",
+      "title": "Advanced Parameters",
+      "fields": [
+        {
+          "key": "first",
+          "type": "number",
+          "default_value": 1,
+          "label": "Start Position",
+          "help": "Sets the Bing pagination starting position."
+        },
+        {
+          "key": "count",
+          "type": "number",
+          "default_value": 35,
+          "label": "Results Per Page",
+          "help": "Sets how many Bing results are returned."
+        },
+        {
+          "key": "date",
+          "type": "select",
+          "label": "Video freshness",
+          "help": "Video freshness window",
+          "options": [
+            {
+              "value": "lt1440",
+              "label": "Past day"
+            },
+            {
+              "value": "lt10080",
+              "label": "Past week"
+            },
+            {
+              "value": "lt43200",
+              "label": "Past month"
+            },
+            {
+              "value": "lt525600",
+              "label": "Past year"
+            }
+          ]
+        },
+        {
+          "key": "length",
+          "type": "select",
+          "label": "Video length",
+          "help": "Video length category",
+          "options": [
+            {
+              "value": "",
+              "label": "Any"
+            },
+            {
+              "value": "short",
+              "label": "Short (< 5 min)"
+            },
+            {
+              "value": "medium",
+              "label": "Medium (5-20 min)"
+            },
+            {
+              "value": "long",
+              "label": "Long (> 20 min)"
+            }
+          ]
+        },
+        {
+          "key": "resolution",
+          "type": "select",
+          "label": "Video resolution",
+          "help": "Video resolution filter",
+          "options": [
+            {
+              "value": "lowerthan_360p",
+              "label": "Lower than 360p"
+            },
+            {
+              "value": "360p",
+              "label": "360p"
+            },
+            {
+              "value": "480p",
+              "label": "480p"
+            },
+            {
+              "value": "720p",
+              "label": "720p"
+            },
+            {
+              "value": "1080p",
+              "label": "1080p"
+            }
+          ]
+        },
+        {
+          "key": "source_site",
+          "type": "select",
+          "label": "Source site",
+          "help": "Limit to specific source site",
+          "options": [
+            {
+              "value": "dailymotion.com",
+              "label": "DailyMotion"
+            },
+            {
+              "value": "vimeo.com",
+              "label": "Vimeo"
+            },
+            {
+              "value": "metacafe.com",
+              "label": "Metacafe"
+            },
+            {
+              "value": "hulu.com",
+              "label": "Hulu"
+            },
+            {
+              "value": "vevo.com",
+              "label": "VEVO"
+            },
+            {
+              "value": "myspace.com",
+              "label": "Myspace"
+            },
+            {
+              "value": "mtv.com",
+              "label": "MTV"
+            },
+            {
+              "value": "cbsnews.com",
+              "label": "CBS"
+            },
+            {
+              "value": "foxnews.com",
+              "label": "FOX"
+            },
+            {
+              "value": "cnn.com",
+              "label": "CNN"
+            },
+            {
+              "value": "msn.com",
+              "label": "MSN"
+            }
+          ]
+        },
+        {
+          "key": "price",
+          "type": "select",
+          "label": "Price",
+          "help": "Price filter",
+          "options": [
+            {
+              "value": "",
+              "label": "Any"
+            },
+            {
+              "value": "free",
+              "label": "Free"
+            },
+            {
+              "value": "paid",
+              "label": "Paid"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "category": {
+    "key": "bing",
+    "name": "Bing"
+  },
+  "is_default_engine": false
+}

@@ -1,0 +1,226 @@
+{
+  "default_engine": "google",
+  "count": 33,
+  "categories": [
+    {
+      "key": "google",
+      "name": "Google",
+      "engine_count": 25
+    },
+    {
+      "key": "bing",
+      "name": "Bing",
+      "engine_count": 6
+    },
+    {
+      "key": "yandex",
+      "name": "Yandex",
+      "engine_count": 1
+    },
+    {
+      "key": "duckduckgo",
+      "name": "DuckDuckGo",
+      "engine_count": 1
+    }
+  ],
+  "engines": [
+    {
+      "key": "google",
+      "name": "Search",
+      "category": "google",
+      "file": "google.json"
+    },
+    {
+      "key": "google_finance",
+      "name": "Finance",
+      "category": "google",
+      "file": "google_finance.json"
+    },
+    {
+      "key": "google_finance_markets",
+      "name": "Finance Markets",
+      "category": "google",
+      "file": "google_finance_markets.json"
+    },
+    {
+      "key": "google_flights",
+      "name": "Flights",
+      "category": "google",
+      "file": "google_flights.json"
+    },
+    {
+      "key": "google_hotels",
+      "name": "Hotels",
+      "category": "google",
+      "file": "google_hotels.json"
+    },
+    {
+      "key": "google_images",
+      "name": "Images",
+      "category": "google",
+      "file": "google_images.json"
+    },
+    {
+      "key": "google_jobs",
+      "name": "Jobs",
+      "category": "google",
+      "file": "google_jobs.json"
+    },
+    {
+      "key": "google_lens",
+      "name": "Lens",
+      "category": "google",
+      "file": "google_lens.json"
+    },
+    {
+      "key": "google_local",
+      "name": "Local",
+      "category": "google",
+      "file": "google_local.json"
+    },
+    {
+      "key": "google_maps",
+      "name": "Maps",
+      "category": "google",
+      "file": "google_maps.json"
+    },
+    {
+      "key": "google_news",
+      "name": "News",
+      "category": "google",
+      "file": "google_news.json"
+    },
+    {
+      "key": "google_patents",
+      "name": "Patents",
+      "category": "google",
+      "file": "google_patents.json"
+    },
+    {
+      "key": "google_patents_details",
+      "name": "Patents Details",
+      "category": "google",
+      "file": "google_patents_details.json"
+    },
+    {
+      "key": "google_play",
+      "name": "Play Search",
+      "category": "google",
+      "file": "google_play.json"
+    },
+    {
+      "key": "google_play_books",
+      "name": "Play Books",
+      "category": "google",
+      "file": "google_play_books.json"
+    },
+    {
+      "key": "google_play_games",
+      "name": "Play Games",
+      "category": "google",
+      "file": "google_play_games.json"
+    },
+    {
+      "key": "google_play_movies",
+      "name": "Play Movies",
+      "category": "google",
+      "file": "google_play_movies.json"
+    },
+    {
+      "key": "google_play_product",
+      "name": "Play Product",
+      "category": "google",
+      "file": "google_play_product.json"
+    },
+    {
+      "key": "google_scholar",
+      "name": "Scholar",
+      "category": "google",
+      "file": "google_scholar.json"
+    },
+    {
+      "key": "google_scholar_author",
+      "name": "Scholar Author",
+      "category": "google",
+      "file": "google_scholar_author.json"
+    },
+    {
+      "key": "google_scholar_cite",
+      "name": "Scholar Cite",
+      "category": "google",
+      "file": "google_scholar_cite.json"
+    },
+    {
+      "key": "google_shopping",
+      "name": "Shopping",
+      "category": "google",
+      "file": "google_shopping.json"
+    },
+    {
+      "key": "google_trends",
+      "name": "Trends",
+      "category": "google",
+      "file": "google_trends.json"
+    },
+    {
+      "key": "google_videos",
+      "name": "Videos",
+      "category": "google",
+      "file": "google_videos.json"
+    },
+    {
+      "key": "google_web",
+      "name": "Web",
+      "category": "google",
+      "file": "google_web.json"
+    },
+    {
+      "key": "bing",
+      "name": "Search",
+      "category": "bing",
+      "file": "bing.json"
+    },
+    {
+      "key": "bing_images",
+      "name": "Images",
+      "category": "bing",
+      "file": "bing_images.json"
+    },
+    {
+      "key": "bing_maps",
+      "name": "Maps",
+      "category": "bing",
+      "file": "bing_maps.json"
+    },
+    {
+      "key": "bing_news",
+      "name": "News",
+      "category": "bing",
+      "file": "bing_news.json"
+    },
+    {
+      "key": "bing_shopping",
+      "name": "Shopping",
+      "category": "bing",
+      "file": "bing_shopping.json"
+    },
+    {
+      "key": "bing_videos",
+      "name": "Videos",
+      "category": "bing",
+      "file": "bing_videos.json"
+    },
+    {
+      "key": "yandex",
+      "name": "Search",
+      "category": "yandex",
+      "file": "yandex.json"
+    },
+    {
+      "key": "duckduckgo",
+      "name": "Search",
+      "category": "duckduckgo",
+      "file": "duckduckgo.json"
+    }
+  ]
+}

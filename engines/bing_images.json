@@ -1,0 +1,624 @@
+{
+  "key": "bing_images",
+  "name": "Images",
+  "query_field": "q",
+  "groups": [
+    {
+      "key": "basic",
+      "title": "Basic Parameters",
+      "fields": [
+        {
+          "key": "q",
+          "type": "text",
+          "required": true,
+          "label": "Search Query",
+          "help": "The search keyword used by the selected engine. Example: pizza."
+        },
+        {
+          "key": "cc",
+          "type": "select",
+          "default_value": "us",
+          "label": "Country/Region",
+          "help": "Sets the country or region code for Bing results. Example: us.",
+          "options": [
+            {
+              "value": "AR",
+              "label": "Argentina"
+            },
+            {
+              "value": "AU",
+              "label": "Australia"
+            },
+            {
+              "value": "AT",
+              "label": "Austria"
+            },
+            {
+              "value": "BE",
+              "label": "Belgium"
+            },
+            {
+              "value": "BR",
+              "label": "Brazil"
+            },
+            {
+              "value": "CA",
+              "label": "Canada"
+            },
+            {
+              "value": "CL",
+              "label": "Chile"
+            },
+            {
+              "value": "DK",
+              "label": "Denmark"
+            },
+            {
+              "value": "FI",
+              "label": "Finland"
+            },
+            {
+              "value": "FR",
+              "label": "France"
+            },
+            {
+              "value": "DE",
+              "label": "Germany"
+            },
+            {
+              "value": "HK",
+              "label": "Hong Kong SAR"
+            },
+            {
+              "value": "IN",
+              "label": "India"
+            },
+            {
+              "value": "ID",
+              "label": "Indonesia"
+            },
+            {
+              "value": "IT",
+              "label": "Italy"
+            },
+            {
+              "value": "JP",
+              "label": "Japan"
+            },
+            {
+              "value": "KR",
+              "label": "Korea"
+            },
+            {
+              "value": "MY",
+              "label": "Malaysia"
+            },
+            {
+              "value": "MX",
+              "label": "Mexico"
+            },
+            {
+              "value": "NL",
+              "label": "Netherlands"
+            },
+            {
+              "value": "NZ",
+              "label": "New Zealand"
+            },
+            {
+              "value": "NO",
+              "label": "Norway"
+            },
+            {
+              "value": "CN",
+              "label": "People's Republic of China"
+            },
+            {
+              "value": "PL",
+              "label": "Poland"
+            },
+            {
+              "value": "PT",
+              "label": "Portugal"
+            },
+            {
+              "value": "PH",
+              "label": "Republic of the Philippines"
+            },
+            {
+              "value": "RU",
+              "label": "Russia"
+            },
+            {
+              "value": "SA",
+              "label": "Saudi Arabia"
+            },
+            {
+              "value": "ZA",
+              "label": "South Africa"
+            },
+            {
+              "value": "ES",
+              "label": "Spain"
+            },
+            {
+              "value": "SE",
+              "label": "Sweden"
+            },
+            {
+              "value": "CH",
+              "label": "Switzerland"
+            },
+            {
+              "value": "TW",
+              "label": "Taiwan"
+            },
+            {
+              "value": "TR",
+              "label": "T鐪塺kiye"
+            },
+            {
+              "value": "GB",
+              "label": "United Kingdom"
+            },
+            {
+              "value": "US",
+              "label": "United States"
+            }
+          ]
+        },
+        {
+          "key": "mkt",
+          "type": "select",
+          "default_value": "en-us",
+          "label": "Market",
+          "help": "Sets the Bing market and language. Example: en-US.",
+          "options": [
+            {
+              "value": "es-AR",
+              "label": "es-AR - Spanish"
+            },
+            {
+              "value": "en-AU",
+              "label": "en-AU - English"
+            },
+            {
+              "value": "de-AT",
+              "label": "de-AT - German"
+            },
+            {
+              "value": "nl-BE",
+              "label": "nl-BE - Dutch"
+            },
+            {
+              "value": "fr-BE",
+              "label": "fr-BE - French"
+            },
+            {
+              "value": "pt-BR",
+              "label": "pt-BR - Portuguese"
+            },
+            {
+              "value": "en-CA",
+              "label": "en-CA - English"
+            },
+            {
+              "value": "fr-CA",
+              "label": "fr-CA - French"
+            },
+            {
+              "value": "es-CL",
+              "label": "es-CL - Spanish"
+            },
+            {
+              "value": "da-DK",
+              "label": "da-DK - Danish"
+            },
+            {
+              "value": "fi-FI",
+              "label": "fi-FI - Finnish"
+            },
+            {
+              "value": "fr-FR",
+              "label": "fr-FR - French"
+            },
+            {
+              "value": "de-DE",
+              "label": "de-DE - German"
+            },
+            {
+              "value": "zh-HK",
+              "label": "zh-HK - Traditional Chinese"
+            },
+            {
+              "value": "en-IN",
+              "label": "en-IN - English"
+            },
+            {
+              "value": "en-ID",
+              "label": "en-ID - English"
+            },
+            {
+              "value": "it-IT",
+              "label": "it-IT - Italian"
+            },
+            {
+              "value": "ja-JP",
+              "label": "ja-JP - Japanese"
+            },
+            {
+              "value": "ko-KR",
+              "label": "ko-KR - Korean"
+            },
+            {
+              "value": "en-MY",
+              "label": "en-MY - English"
+            },
+            {
+              "value": "es-MX",
+              "label": "es-MX - Spanish"
+            },
+            {
+              "value": "nl-NL",
+              "label": "nl-NL - Dutch"
+            },
+            {
+              "value": "en-NZ",
+              "label": "en-NZ - English"
+            },
+            {
+              "value": "no-NO",
+              "label": "no-NO - Norwegian"
+            },
+            {
+              "value": "zh-CN",
+              "label": "zh-CN - Chinese"
+            },
+            {
+              "value": "pl-PL",
+              "label": "pl-PL - Polish"
+            },
+            {
+              "value": "en-PH",
+              "label": "en-PH - English"
+            },
+            {
+              "value": "ru-RU",
+              "label": "ru-RU - Russian"
+            },
+            {
+              "value": "en-ZA",
+              "label": "en-ZA - English"
+            },
+            {
+              "value": "es-ES",
+              "label": "es-ES - Spanish"
+            },
+            {
+              "value": "sv-SE",
+              "label": "sv-SE - Swedish"
+            },
+            {
+              "value": "fr-CH",
+              "label": "fr-CH - French"
+            },
+            {
+              "value": "de-CH",
+              "label": "de-CH - German"
+            },
+            {
+              "value": "zh-TW",
+              "label": "zh-TW - Traditional Chinese"
+            },
+            {
+              "value": "tr-TR",
+              "label": "tr-TR - Turkish"
+            },
+            {
+              "value": "en-GB",
+              "label": "en-GB - English"
+            },
+            {
+              "value": "en-US",
+              "label": "en-US - English"
+            },
+            {
+              "value": "es-US",
+              "label": "es-US - Spanish"
+            }
+          ]
+        },
+        {
+          "key": "no_cache",
+          "type": "switch",
+          "default_value": false,
+          "label": "No Cache",
+          "help": "When enabled, the adapter returns a fresh preview result."
+        }
+      ]
+    },
+    {
+      "key": "image_filters",
+      "title": "Image filters",
+      "fields": [
+        {
+          "key": "imagesize",
+          "type": "select",
+          "label": "Image size",
+          "help": "Image size category",
+          "options": [
+            {
+              "value": "small",
+              "label": "Small"
+            },
+            {
+              "value": "medium",
+              "label": "Medium"
+            },
+            {
+              "value": "large",
+              "label": "Large"
+            },
+            {
+              "value": "wallpaper",
+              "label": "Wallpaper"
+            }
+          ]
+        },
+        {
+          "key": "color2",
+          "type": "select",
+          "label": "Color",
+          "help": "Image color filter",
+          "options": [
+            {
+              "value": "",
+              "label": "Any"
+            },
+            {
+              "value": "color",
+              "label": "Color"
+            },
+            {
+              "value": "bw",
+              "label": "Black & White"
+            },
+            {
+              "value": "FGcls_RED",
+              "label": "Red"
+            },
+            {
+              "value": "FGcls_ORGANGE",
+              "label": "Orange"
+            },
+            {
+              "value": "FGcls_YELLOW",
+              "label": "Yellow"
+            },
+            {
+              "value": "FGcls_GREEN",
+              "label": "Green"
+            },
+            {
+              "value": "FGcls_TEAL",
+              "label": "Teal"
+            },
+            {
+              "value": "FGcls_BLUE",
+              "label": "Blue"
+            },
+            {
+              "value": "FGcls_PURPLE",
+              "label": "Purple"
+            },
+            {
+              "value": "FGcls_PINK",
+              "label": "Pink"
+            },
+            {
+              "value": "FGcls_BROWN",
+              "label": "Brown"
+            },
+            {
+              "value": "FGcls_BLACK",
+              "label": "Black"
+            },
+            {
+              "value": "FGcls_GRAY",
+              "label": "Gray"
+            },
+            {
+              "value": "FGcls_WHITE",
+              "label": "White"
+            }
+          ]
+        },
+        {
+          "key": "photo",
+          "type": "select",
+          "label": "Photo type",
+          "help": "Photo type filter",
+          "options": [
+            {
+              "value": "",
+              "label": "Any"
+            },
+            {
+              "value": "photo",
+              "label": "Photo"
+            },
+            {
+              "value": "clipart",
+              "label": "Clipart"
+            },
+            {
+              "value": "linedrawing",
+              "label": "Line Drawing"
+            },
+            {
+              "value": "animatedgif",
+              "label": "Animated GIF"
+            },
+            {
+              "value": "animatedgifhttps",
+              "label": "Animated GIF (HTTPS)"
+            },
+            {
+              "value": "transparent",
+              "label": "Transparent"
+            },
+            {
+              "value": "shopping",
+              "label": "Shopping"
+            }
+          ]
+        },
+        {
+          "key": "aspect",
+          "type": "select",
+          "label": "Aspect ratio",
+          "help": "Image aspect ratio filter",
+          "options": [
+            {
+              "value": "",
+              "label": "Any"
+            },
+            {
+              "value": "square",
+              "label": "Square"
+            },
+            {
+              "value": "wide",
+              "label": "Wide"
+            },
+            {
+              "value": "tall",
+              "label": "Tall"
+            }
+          ]
+        },
+        {
+          "key": "face",
+          "type": "select",
+          "label": "Face",
+          "help": "Image face filter",
+          "options": [
+            {
+              "value": "",
+              "label": "Any"
+            },
+            {
+              "value": "face",
+              "label": "Face"
+            },
+            {
+              "value": "portrait",
+              "label": "Headshot"
+            }
+          ]
+        },
+        {
+          "key": "license",
+          "type": "select",
+          "label": "License",
+          "help": "Usage license filter",
+          "options": [
+            {
+              "value": "",
+              "label": "Any"
+            },
+            {
+              "value": "Type-Any",
+              "label": "Any (Type)"
+            },
+            {
+              "value": "L1",
+              "label": "Free to share & use"
+            },
+            {
+              "value": "L2_L3_L4_L5_L6_L7",
+              "label": "Free to share, modify & use"
+            },
+            {
+              "value": "L2_L3_L4",
+              "label": "Free to share & use commercially"
+            },
+            {
+              "value": "L2_L3_L5_L6",
+              "label": "Free to modify, share & use"
+            },
+            {
+              "value": "L2_L3",
+              "label": "Free to modify, share & use commercially"
+            }
+          ]
+        },
+        {
+          "key": "age",
+          "type": "select",
+          "label": "Image freshness",
+          "help": "Image freshness window",
+          "options": [
+            {
+              "value": "lt1440",
+              "label": "Past day"
+            },
+            {
+              "value": "lt10080",
+              "label": "Past week"
+            },
+            {
+              "value": "lt43200",
+              "label": "Past month"
+            },
+            {
+              "value": "lt525600",
+              "label": "Past year"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "advanced",
+      "title": "Advanced Parameters",
+      "fields": [
+        {
+          "key": "adlt",
+          "type": "select",
+          "label": "Adult filter",
+          "help": "Adult content filter strictness",
+          "options": [
+            {
+              "value": "strict",
+              "label": "Strict"
+            },
+            {
+              "value": "off",
+              "label": "Off"
+            }
+          ]
+        },
+        {
+          "key": "first",
+          "type": "number",
+          "default_value": 1,
+          "label": "Start Position",
+          "help": "Sets the Bing pagination starting position."
+        },
+        {
+          "key": "count",
+          "type": "number",
+          "default_value": 35,
+          "label": "Results Per Page",
+          "help": "Sets how many Bing results are returned."
+        }
+      ]
+    }
+  ],
+  "category": {
+    "key": "bing",
+    "name": "Bing"
+  },
+  "is_default_engine": false
+}

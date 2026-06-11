@@ -1,0 +1,546 @@
+{
+  "key": "bing_maps",
+  "name": "Maps",
+  "query_field": "q",
+  "groups": [
+    {
+      "key": "basic",
+      "title": "Basic Parameters",
+      "fields": [
+        {
+          "key": "q",
+          "type": "text",
+          "required": true,
+          "help_key": "serp.fields.q_help",
+          "label": "Search Query",
+          "help": "The search keyword used by the selected engine. Example: pizza."
+        },
+        {
+          "key": "cc",
+          "type": "select",
+          "default_value": "us",
+          "label": "Country/Region",
+          "help": "Sets the country or region code for Bing results. Example: us.",
+          "options": [
+            {
+              "value": "AR",
+              "label": "Argentina"
+            },
+            {
+              "value": "AU",
+              "label": "Australia"
+            },
+            {
+              "value": "AT",
+              "label": "Austria"
+            },
+            {
+              "value": "BE",
+              "label": "Belgium"
+            },
+            {
+              "value": "BR",
+              "label": "Brazil"
+            },
+            {
+              "value": "CA",
+              "label": "Canada"
+            },
+            {
+              "value": "CL",
+              "label": "Chile"
+            },
+            {
+              "value": "DK",
+              "label": "Denmark"
+            },
+            {
+              "value": "FI",
+              "label": "Finland"
+            },
+            {
+              "value": "FR",
+              "label": "France"
+            },
+            {
+              "value": "DE",
+              "label": "Germany"
+            },
+            {
+              "value": "HK",
+              "label": "Hong Kong SAR"
+            },
+            {
+              "value": "IN",
+              "label": "India"
+            },
+            {
+              "value": "ID",
+              "label": "Indonesia"
+            },
+            {
+              "value": "IT",
+              "label": "Italy"
+            },
+            {
+              "value": "JP",
+              "label": "Japan"
+            },
+            {
+              "value": "KR",
+              "label": "Korea"
+            },
+            {
+              "value": "MY",
+              "label": "Malaysia"
+            },
+            {
+              "value": "MX",
+              "label": "Mexico"
+            },
+            {
+              "value": "NL",
+              "label": "Netherlands"
+            },
+            {
+              "value": "NZ",
+              "label": "New Zealand"
+            },
+            {
+              "value": "NO",
+              "label": "Norway"
+            },
+            {
+              "value": "CN",
+              "label": "People's Republic of China"
+            },
+            {
+              "value": "PL",
+              "label": "Poland"
+            },
+            {
+              "value": "PT",
+              "label": "Portugal"
+            },
+            {
+              "value": "PH",
+              "label": "Republic of the Philippines"
+            },
+            {
+              "value": "RU",
+              "label": "Russia"
+            },
+            {
+              "value": "SA",
+              "label": "Saudi Arabia"
+            },
+            {
+              "value": "ZA",
+              "label": "South Africa"
+            },
+            {
+              "value": "ES",
+              "label": "Spain"
+            },
+            {
+              "value": "SE",
+              "label": "Sweden"
+            },
+            {
+              "value": "CH",
+              "label": "Switzerland"
+            },
+            {
+              "value": "TW",
+              "label": "Taiwan"
+            },
+            {
+              "value": "TR",
+              "label": "T眉rkiye"
+            },
+            {
+              "value": "GB",
+              "label": "United Kingdom"
+            },
+            {
+              "value": "US",
+              "label": "United States"
+            }
+          ]
+        },
+        {
+          "key": "setlang",
+          "type": "select",
+          "default_value": "en",
+          "label": "Language",
+          "help": "Bing interface language",
+          "options": [
+            {
+              "value": "ar-SA",
+              "label": "Arabic - Saudi Arabia"
+            },
+            {
+              "value": "eu",
+              "label": "Basque"
+            },
+            {
+              "value": "bg",
+              "label": "Bulgarian"
+            },
+            {
+              "value": "bg-BG",
+              "label": "Bulgarian - Bulgaria"
+            },
+            {
+              "value": "ca",
+              "label": "Catalan Spanish"
+            },
+            {
+              "value": "ku-Arab",
+              "label": "Central Kurdish"
+            },
+            {
+              "value": "zh-CN",
+              "label": "Chinese - China"
+            },
+            {
+              "value": "zh-HK",
+              "label": "Chinese - Hong Kong Special Administrative Unit"
+            },
+            {
+              "value": "zh-Hans",
+              "label": "Chinese - Simplified"
+            },
+            {
+              "value": "zh-TW",
+              "label": "Chinese - Taiwan"
+            },
+            {
+              "value": "zh-Hant",
+              "label": "Chinese - Traditional"
+            },
+            {
+              "value": "cs",
+              "label": "Czech"
+            },
+            {
+              "value": "cs-CZ",
+              "label": "Czech - Czech Republic"
+            },
+            {
+              "value": "da",
+              "label": "Danish"
+            },
+            {
+              "value": "da-DK",
+              "label": "Danish - Denmark"
+            },
+            {
+              "value": "nl-BE",
+              "label": "Dutch - Belgium"
+            },
+            {
+              "value": "nl",
+              "label": "Dutch - Netherlands"
+            },
+            {
+              "value": "nl-NL",
+              "label": "Dutch - Netherlands"
+            },
+            {
+              "value": "en-AU",
+              "label": "English - Australia"
+            },
+            {
+              "value": "en-CA",
+              "label": "English - Canada"
+            },
+            {
+              "value": "en-IN",
+              "label": "English - India"
+            },
+            {
+              "value": "en-GB",
+              "label": "English - United Kingdom"
+            },
+            {
+              "value": "en-US",
+              "label": "English - United States"
+            },
+            {
+              "value": "fi",
+              "label": "Finnish"
+            },
+            {
+              "value": "fi-FI",
+              "label": "Finnish - Finland"
+            },
+            {
+              "value": "fr-BE",
+              "label": "French - Belgium"
+            },
+            {
+              "value": "fr-CA",
+              "label": "French - Canada"
+            },
+            {
+              "value": "fr",
+              "label": "French - France"
+            },
+            {
+              "value": "fr-FR",
+              "label": "French - France"
+            },
+            {
+              "value": "fr-CH",
+              "label": "French - Switzerland"
+            },
+            {
+              "value": "gl",
+              "label": "Galician"
+            },
+            {
+              "value": "de",
+              "label": "German - Germany"
+            },
+            {
+              "value": "de-DE",
+              "label": "German - Germany"
+            },
+            {
+              "value": "el",
+              "label": "Greek"
+            },
+            {
+              "value": "he",
+              "label": "Hebrew"
+            },
+            {
+              "value": "he-IL",
+              "label": "Hebrew - Israel"
+            },
+            {
+              "value": "hi",
+              "label": "Hindi"
+            },
+            {
+              "value": "hi-IN",
+              "label": "Hindi - India"
+            },
+            {
+              "value": "hu",
+              "label": "Hungarian"
+            },
+            {
+              "value": "hu-HU",
+              "label": "Hungarian - Hungary"
+            },
+            {
+              "value": "is",
+              "label": "Icelandic"
+            },
+            {
+              "value": "is-IS",
+              "label": "Icelandic - Iceland"
+            },
+            {
+              "value": "it",
+              "label": "Italian - Italy"
+            },
+            {
+              "value": "it-IT",
+              "label": "Italian - Italy"
+            },
+            {
+              "value": "ja",
+              "label": "Japanese"
+            },
+            {
+              "value": "ja-JP",
+              "label": "Japanese - Japan"
+            },
+            {
+              "value": "ko",
+              "label": "Korean"
+            },
+            {
+              "value": "Ko-KR",
+              "label": "Korean - Korea"
+            },
+            {
+              "value": "ky-Cyrl",
+              "label": "Kyrgyz"
+            },
+            {
+              "value": "lv",
+              "label": "Latvian"
+            },
+            {
+              "value": "lv-LV",
+              "label": "Latvian - Latvia"
+            },
+            {
+              "value": "lt",
+              "label": "Lithuanian"
+            },
+            {
+              "value": "lt-LT",
+              "label": "Lithuanian - Lithuania"
+            },
+            {
+              "value": "nb",
+              "label": "Norwegian - Bokm氓l"
+            },
+            {
+              "value": "nb-NO",
+              "label": "Norwegian - Bokm氓l - Norway"
+            },
+            {
+              "value": "nn",
+              "label": "Norwegian - Nynorsk"
+            },
+            {
+              "value": "pl",
+              "label": "Polish"
+            },
+            {
+              "value": "pl-PL",
+              "label": "Polish - Poland"
+            },
+            {
+              "value": "pt-BR",
+              "label": "Portuguese - Brazil"
+            },
+            {
+              "value": "pt-PT",
+              "label": "Portuguese - Portugal"
+            },
+            {
+              "value": "ru",
+              "label": "Russian"
+            },
+            {
+              "value": "ru-RU",
+              "label": "Russian - Russia"
+            },
+            {
+              "value": "es-MX",
+              "label": "Spanish - Mexico"
+            },
+            {
+              "value": "es",
+              "label": "Spanish - Spain"
+            },
+            {
+              "value": "es-ES",
+              "label": "Spanish - Spain"
+            },
+            {
+              "value": "es-US",
+              "label": "Spanish - United States"
+            },
+            {
+              "value": "sv",
+              "label": "Swedish - Sweden"
+            },
+            {
+              "value": "sv-SE",
+              "label": "Swedish - Sweden"
+            },
+            {
+              "value": "tt-Cyrl",
+              "label": "Tatar - Cyrillic"
+            },
+            {
+              "value": "th",
+              "label": "Thai"
+            },
+            {
+              "value": "th-TH",
+              "label": "Thai - Thailand"
+            },
+            {
+              "value": "tr",
+              "label": "Turkish"
+            },
+            {
+              "value": "tr-TR",
+              "label": "Turkish - T眉rkiye"
+            },
+            {
+              "value": "uk",
+              "label": "Ukrainian"
+            },
+            {
+              "value": "uk-UA",
+              "label": "Ukrainian - Ukraine"
+            },
+            {
+              "value": "ug-Arab",
+              "label": "Uyghur"
+            },
+            {
+              "value": "ca-ES-valencia",
+              "label": "Valencian"
+            },
+            {
+              "value": "vi",
+              "label": "Vietnamese"
+            },
+            {
+              "value": "vi-VN",
+              "label": "Vietnamese - Vietnam"
+            }
+          ]
+        },
+        {
+          "key": "cp",
+          "type": "text",
+          "placeholder_key": "serp.fields.ll_placeholder",
+          "label": "Center point",
+          "help": "Map center point coordinates",
+          "placeholder": "e.g. 40.7128,-74.0060"
+        },
+        {
+          "key": "no_cache",
+          "type": "switch",
+          "default_value": false,
+          "help_key": "serp.fields.no_cache_help",
+          "label": "No Cache",
+          "help": "When enabled, the adapter returns a fresh preview result."
+        }
+      ]
+    },
+    {
+      "key": "advanced",
+      "title": "Advanced Parameters",
+      "fields": [
+        {
+          "key": "first",
+          "type": "number",
+          "default_value": 1,
+          "label": "Start Position",
+          "help": "Sets the Bing pagination starting position."
+        },
+        {
+          "key": "count",
+          "type": "number",
+          "default_value": 10,
+          "label": "Results Per Page",
+          "help": "Sets how many Bing results are returned."
+        },
+        {
+          "key": "place_id",
+          "type": "text",
+          "label": "Place ID",
+          "help": "Google Place ID"
+        }
+      ]
+    }
+  ],
+  "category": {
+    "key": "bing",
+    "name": "Bing"
+  },
+  "is_default_engine": false
+}

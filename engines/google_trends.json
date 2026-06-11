@@ -1,0 +1,829 @@
+{
+  "key": "google_trends",
+  "name": "Trends",
+  "query_field": "q",
+  "groups": [
+    {
+      "key": "basic",
+      "title": "Basic Parameters",
+      "fields": [
+        {
+          "key": "q",
+          "type": "text",
+          "required": true,
+          "label": "Search Query",
+          "help": "The search keyword used by the selected engine. Example: pizza."
+        },
+        {
+          "key": "geo",
+          "type": "text",
+          "placeholder_key": "serp.fields.geo_placeholder",
+          "label": "Geo",
+          "help": "Geographic location filter",
+          "placeholder": "e.g. US / US-CA / US-CA-SF"
+        },
+        {
+          "key": "hl",
+          "type": "select",
+          "default_value": "en",
+          "label": "Language",
+          "help": "Sets the interface language for returned results. Example: en.",
+          "options": [
+            {
+              "value": "af",
+              "label": "Afrikaans"
+            },
+            {
+              "value": "ak",
+              "label": "Akan"
+            },
+            {
+              "value": "ws",
+              "label": "Samoa"
+            },
+            {
+              "value": "am",
+              "label": "Amharic"
+            },
+            {
+              "value": "ar",
+              "label": "Arabic"
+            },
+            {
+              "value": "hy",
+              "label": "Armenian"
+            },
+            {
+              "value": "az",
+              "label": "Azerbaijani"
+            },
+            {
+              "value": "ceb",
+              "label": "Binisaya"
+            },
+            {
+              "value": "eu",
+              "label": "Basque"
+            },
+            {
+              "value": "be",
+              "label": "Belarusian"
+            },
+            {
+              "value": "bem",
+              "label": "Bemba"
+            },
+            {
+              "value": "bn",
+              "label": "Bengali"
+            },
+            {
+              "value": "bh",
+              "label": "Bihari"
+            },
+            {
+              "value": "xx-bork",
+              "label": "Bork, bork, bork!"
+            },
+            {
+              "value": "bs",
+              "label": "Bosnian"
+            },
+            {
+              "value": "br",
+              "label": "Breton"
+            },
+            {
+              "value": "bg",
+              "label": "Bulgarian"
+            },
+            {
+              "value": "bt",
+              "label": "Bhutanese"
+            },
+            {
+              "value": "km",
+              "label": "Cambodian"
+            },
+            {
+              "value": "ca",
+              "label": "Catalan"
+            },
+            {
+              "value": "chr",
+              "label": "Cherokee"
+            },
+            {
+              "value": "ny",
+              "label": "Chichewa"
+            },
+            {
+              "value": "zh-cn",
+              "label": "Chinese (Simplified)"
+            },
+            {
+              "value": "zh-tw",
+              "label": "Chinese (Traditional)"
+            },
+            {
+              "value": "co",
+              "label": "Corsican"
+            },
+            {
+              "value": "hr",
+              "label": "Croatian"
+            },
+            {
+              "value": "cs",
+              "label": "Czech"
+            },
+            {
+              "value": "da",
+              "label": "Danish"
+            },
+            {
+              "value": "nl",
+              "label": "Dutch"
+            },
+            {
+              "value": "xx-elmer",
+              "label": "Elmer Fudd"
+            },
+            {
+              "value": "en",
+              "label": "English"
+            },
+            {
+              "value": "eo",
+              "label": "Esperanto"
+            },
+            {
+              "value": "et",
+              "label": "Estonian"
+            },
+            {
+              "value": "ee",
+              "label": "Ewe"
+            },
+            {
+              "value": "fo",
+              "label": "Faroese"
+            },
+            {
+              "value": "tl",
+              "label": "Filipino"
+            },
+            {
+              "value": "fi",
+              "label": "Finnish"
+            },
+            {
+              "value": "fr",
+              "label": "French"
+            },
+            {
+              "value": "fy",
+              "label": "Frisian"
+            },
+            {
+              "value": "gaa",
+              "label": "Ga"
+            },
+            {
+              "value": "gl",
+              "label": "Galician"
+            },
+            {
+              "value": "ka",
+              "label": "Georgian"
+            },
+            {
+              "value": "de",
+              "label": "German"
+            },
+            {
+              "value": "el",
+              "label": "Greek"
+            },
+            {
+              "value": "kl",
+              "label": "Greenlandic"
+            },
+            {
+              "value": "gn",
+              "label": "Guarani"
+            },
+            {
+              "value": "gu",
+              "label": "Gujarati"
+            },
+            {
+              "value": "xx-hacker",
+              "label": "Hacker"
+            },
+            {
+              "value": "ht",
+              "label": "Haitian Creole"
+            },
+            {
+              "value": "ha",
+              "label": "Hausa"
+            },
+            {
+              "value": "haw",
+              "label": "Hawaiian"
+            },
+            {
+              "value": "iw",
+              "label": "Hebrew"
+            },
+            {
+              "value": "he",
+              "label": "Hebrew"
+            },
+            {
+              "value": "hi",
+              "label": "Hindi"
+            },
+            {
+              "value": "hu",
+              "label": "Hungarian"
+            },
+            {
+              "value": "is",
+              "label": "Icelandic"
+            },
+            {
+              "value": "ig",
+              "label": "Igbo"
+            },
+            {
+              "value": "id",
+              "label": "Indonesian"
+            },
+            {
+              "value": "ia",
+              "label": "Interlingua"
+            },
+            {
+              "value": "ga",
+              "label": "Irish"
+            },
+            {
+              "value": "it",
+              "label": "Italian"
+            },
+            {
+              "value": "ja",
+              "label": "Japanese"
+            },
+            {
+              "value": "jw",
+              "label": "Javanese"
+            },
+            {
+              "value": "kn",
+              "label": "Kannada"
+            },
+            {
+              "value": "kk",
+              "label": "Kazakh"
+            },
+            {
+              "value": "rw",
+              "label": "Kinyarwanda"
+            },
+            {
+              "value": "rn",
+              "label": "Kirundi"
+            },
+            {
+              "value": "xx-klingon",
+              "label": "Klingon"
+            },
+            {
+              "value": "kg",
+              "label": "Kongo"
+            },
+            {
+              "value": "ko",
+              "label": "Korean"
+            },
+            {
+              "value": "kri",
+              "label": "Krio (Sierra Leone)"
+            },
+            {
+              "value": "ku",
+              "label": "Kurdish"
+            },
+            {
+              "value": "ckb",
+              "label": "Kurdish (Soran卯)"
+            },
+            {
+              "value": "ky",
+              "label": "Kyrgyz"
+            },
+            {
+              "value": "lo",
+              "label": "Laothian"
+            },
+            {
+              "value": "la",
+              "label": "Latin"
+            },
+            {
+              "value": "lv",
+              "label": "Latvian"
+            },
+            {
+              "value": "ln",
+              "label": "Lingala"
+            },
+            {
+              "value": "lt",
+              "label": "Lithuanian"
+            },
+            {
+              "value": "loz",
+              "label": "Lozi"
+            },
+            {
+              "value": "lg",
+              "label": "Luganda"
+            },
+            {
+              "value": "ach",
+              "label": "Luo"
+            },
+            {
+              "value": "mk",
+              "label": "Macedonian"
+            },
+            {
+              "value": "mg",
+              "label": "Malagasy"
+            },
+            {
+              "value": "ms",
+              "label": "Malay"
+            },
+            {
+              "value": "ml",
+              "label": "Malayalam"
+            },
+            {
+              "value": "mt",
+              "label": "Maltese"
+            },
+            {
+              "value": "mv",
+              "label": "Maldives"
+            },
+            {
+              "value": "mi",
+              "label": "Maori"
+            },
+            {
+              "value": "mr",
+              "label": "Marathi"
+            },
+            {
+              "value": "mfe",
+              "label": "Mauritian Creole"
+            },
+            {
+              "value": "mo",
+              "label": "Moldavian"
+            },
+            {
+              "value": "mn",
+              "label": "Mongolian"
+            },
+            {
+              "value": "sr-me",
+              "label": "Montenegrin"
+            },
+            {
+              "value": "my",
+              "label": "Myanmar"
+            },
+            {
+              "value": "ne",
+              "label": "Nepali"
+            },
+            {
+              "value": "pcm",
+              "label": "Nigerian Pidgin"
+            },
+            {
+              "value": "nso",
+              "label": "Northern Sotho"
+            },
+            {
+              "value": "no",
+              "label": "Norwegian"
+            },
+            {
+              "value": "nn",
+              "label": "Norwegian (Nynorsk)"
+            },
+            {
+              "value": "oc",
+              "label": "Occitan"
+            },
+            {
+              "value": "or",
+              "label": "Oriya"
+            },
+            {
+              "value": "om",
+              "label": "Oromo"
+            },
+            {
+              "value": "ps",
+              "label": "Pashto"
+            },
+            {
+              "value": "fa",
+              "label": "Persian"
+            },
+            {
+              "value": "xx-pirate",
+              "label": "Pirate"
+            },
+            {
+              "value": "pl",
+              "label": "Polish"
+            },
+            {
+              "value": "pt",
+              "label": "Portuguese"
+            },
+            {
+              "value": "pt-br",
+              "label": "Portuguese (Brazil)"
+            },
+            {
+              "value": "pt-pt",
+              "label": "Portuguese (Portugal)"
+            },
+            {
+              "value": "pa",
+              "label": "Punjabi"
+            },
+            {
+              "value": "qu",
+              "label": "Quechua"
+            },
+            {
+              "value": "ro",
+              "label": "Romanian"
+            },
+            {
+              "value": "rm",
+              "label": "Romansh"
+            },
+            {
+              "value": "nyn",
+              "label": "Runyakitara"
+            },
+            {
+              "value": "ru",
+              "label": "Russian"
+            },
+            {
+              "value": "gd",
+              "label": "Scots Gaelic"
+            },
+            {
+              "value": "sr",
+              "label": "Serbian"
+            },
+            {
+              "value": "sh",
+              "label": "Serbo-Croatian"
+            },
+            {
+              "value": "st",
+              "label": "Sesotho"
+            },
+            {
+              "value": "tn",
+              "label": "Setswana"
+            },
+            {
+              "value": "crs",
+              "label": "Seychellois Creole"
+            },
+            {
+              "value": "sn",
+              "label": "Shona"
+            },
+            {
+              "value": "sd",
+              "label": "Sindhi"
+            },
+            {
+              "value": "si",
+              "label": "Sinhalese"
+            },
+            {
+              "value": "sk",
+              "label": "Slovak"
+            },
+            {
+              "value": "sl",
+              "label": "Slovenian"
+            },
+            {
+              "value": "so",
+              "label": "Somali"
+            },
+            {
+              "value": "es",
+              "label": "Spanish"
+            },
+            {
+              "value": "es-419",
+              "label": "Spanish (Latin American)"
+            },
+            {
+              "value": "su",
+              "label": "Sundanese"
+            },
+            {
+              "value": "sw",
+              "label": "Swahili"
+            },
+            {
+              "value": "sv",
+              "label": "Swedish"
+            },
+            {
+              "value": "tg",
+              "label": "Tajik"
+            },
+            {
+              "value": "ta",
+              "label": "Tamil"
+            },
+            {
+              "value": "tt",
+              "label": "Tatar"
+            },
+            {
+              "value": "te",
+              "label": "Telugu"
+            },
+            {
+              "value": "th",
+              "label": "Thai"
+            },
+            {
+              "value": "ti",
+              "label": "Tigrinya"
+            },
+            {
+              "value": "to",
+              "label": "Tonga"
+            },
+            {
+              "value": "lua",
+              "label": "Tshiluba"
+            },
+            {
+              "value": "tum",
+              "label": "Tumbuka"
+            },
+            {
+              "value": "tr",
+              "label": "Turkish"
+            },
+            {
+              "value": "tk",
+              "label": "Turkmen"
+            },
+            {
+              "value": "tw",
+              "label": "Twi"
+            },
+            {
+              "value": "ug",
+              "label": "Uighur"
+            },
+            {
+              "value": "uk",
+              "label": "Ukrainian"
+            },
+            {
+              "value": "ur",
+              "label": "Urdu"
+            },
+            {
+              "value": "uz",
+              "label": "Uzbek"
+            },
+            {
+              "value": "vu",
+              "label": "Vanuatu"
+            },
+            {
+              "value": "vi",
+              "label": "Vietnamese"
+            },
+            {
+              "value": "cy",
+              "label": "Welsh"
+            },
+            {
+              "value": "wo",
+              "label": "Wolof"
+            },
+            {
+              "value": "xh",
+              "label": "Xhosa"
+            },
+            {
+              "value": "yi",
+              "label": "Yiddish"
+            },
+            {
+              "value": "yo",
+              "label": "Yoruba"
+            },
+            {
+              "value": "zu",
+              "label": "Zulu"
+            }
+          ]
+        },
+        {
+          "key": "data_type",
+          "type": "select",
+          "default_value": "TIMESERIES",
+          "label": "Data type",
+          "help": "Type of trends data to return",
+          "options": [
+            {
+              "value": "TIMESERIES",
+              "label": "Interest over time"
+            },
+            {
+              "value": "GEO_MAP",
+              "label": "Interest by region"
+            },
+            {
+              "value": "GEO_MAP_0",
+              "label": "Interest by sub-region"
+            },
+            {
+              "value": "RELATED_TOPICS",
+              "label": "Related topics"
+            },
+            {
+              "value": "RELATED_QUERIES",
+              "label": "Related queries"
+            }
+          ]
+        },
+        {
+          "key": "region",
+          "type": "select",
+          "default_value": "COUNTRY",
+          "label": "Region",
+          "help": "Trends region scope",
+          "options": [
+            {
+              "value": "COUNTRY",
+              "label": "Country"
+            },
+            {
+              "value": "REGION",
+              "label": "Region"
+            },
+            {
+              "value": "DMA",
+              "label": "DMA"
+            },
+            {
+              "value": "CITY",
+              "label": "City"
+            }
+          ]
+        },
+        {
+          "key": "no_cache",
+          "type": "switch",
+          "default_value": false,
+          "label": "No Cache",
+          "help": "When enabled, the adapter returns a fresh preview result."
+        }
+      ]
+    },
+    {
+      "key": "advanced",
+      "title": "Advanced Parameters",
+      "fields": [
+        {
+          "key": "date",
+          "type": "text",
+          "placeholder_key": "serp.fields.trends_date_placeholder",
+          "label": "Date range",
+          "help": "Trends date range expression",
+          "placeholder": "e.g. today 12-m / 2020-01-01 2020-12-31"
+        },
+        {
+          "key": "cat",
+          "type": "select",
+          "default_value": "0",
+          "label": "Category ID",
+          "help": "Trends category ID",
+          "options": [
+            {
+              "value": "0",
+              "label": "All categories"
+            },
+            {
+              "value": "3",
+              "label": "Arts & Entertainment"
+            },
+            {
+              "value": "5",
+              "label": "Computers & Electronics"
+            },
+            {
+              "value": "7",
+              "label": "Finance"
+            },
+            {
+              "value": "8",
+              "label": "Food & Drink"
+            },
+            {
+              "value": "11",
+              "label": "Home & Garden"
+            },
+            {
+              "value": "12",
+              "label": "Internet & Telecom"
+            },
+            {
+              "value": "13",
+              "label": "Jobs & Education"
+            },
+            {
+              "value": "14",
+              "label": "Law & Government"
+            },
+            {
+              "value": "16",
+              "label": "News"
+            }
+          ]
+        },
+        {
+          "key": "gprop",
+          "type": "select",
+          "label": "Property",
+          "help": "Google property scope (web/news/images...)",
+          "options": [
+            {
+              "value": "",
+              "label": "Web"
+            },
+            {
+              "value": "images",
+              "label": "Images"
+            },
+            {
+              "value": "news",
+              "label": "News"
+            },
+            {
+              "value": "froogle",
+              "label": "Shopping"
+            },
+            {
+              "value": "youtube",
+              "label": "YouTube"
+            }
+          ]
+        },
+        {
+          "key": "tz",
+          "type": "text",
+          "default_value": "0",
+          "label": "Timezone offset",
+          "help": "Timezone offset in minutes"
+        }
+      ]
+    }
+  ],
+  "category": {
+    "key": "google",
+    "name": "Google"
+  },
+  "is_default_engine": false
+}

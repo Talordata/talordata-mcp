@@ -1,0 +1,8 @@
+root_dir: .
+listen_addr: ":8800"
+upstream_endpoint: "https://serpapi.talordata.net/serp/v1/request"
+history_endpoint: "https://api.talordata.com/accounts/v1/serp/mcp/history"
+statistics_endpoint: "https://api.talordata.com/pay_package_view/v1/serp/mcp/statistics"
+timeout_ms: 150000
+shutdown_timeout_ms: 10000
+log_prefix: "[talordata-mcp]"

@@ -1,0 +1,35 @@
+{
+  "key": "google_patents_details",
+  "name": "Patents Details",
+  "query_field": "patent_id",
+  "groups": [
+    {
+      "key": "basic",
+      "title": "Basic Parameters",
+      "fields": [
+        {
+          "key": "patent_id",
+          "type": "text",
+          "required": true,
+          "placeholder_key": "serp.fields.patent_id_placeholder",
+          "label": "Patent ID",
+          "help": "Patent publication identifier",
+          "placeholder": "e.g. US11111111B2"
+        },
+        {
+          "key": "no_cache",
+          "type": "switch",
+          "default_value": false,
+          "help_key": "serp.fields.no_cache_help",
+          "label": "No Cache",
+          "help": "When enabled, the adapter returns a fresh preview result."
+        }
+      ]
+    }
+  ],
+  "category": {
+    "key": "google",
+    "name": "Google"
+  },
+  "is_default_engine": false
+}

@@ -1,0 +1,327 @@
+{
+  "key": "yandex",
+  "name": "Search",
+  "query_field": "text",
+  "groups": [
+    {
+      "key": "basic",
+      "title": "Basic Parameters",
+      "fields": [
+        {
+          "key": "text",
+          "type": "text",
+          "required": true,
+          "help_key": "serp.fields.text_help",
+          "label": "Search Query",
+          "help": "The search keyword for Yandex requests. Example: pizza."
+        }
+      ]
+    },
+    {
+      "key": "geographic_location",
+      "title": "Geographic Location",
+      "fields": [
+        {
+          "key": "lr",
+          "type": "select",
+          "label": "Language Restriction",
+          "help": "Sets Yandex region targeting.",
+          "options": [
+            {
+              "value": "",
+              "label": "Default"
+            },
+            {
+              "value": "84",
+              "label": "United States"
+            },
+            {
+              "value": "102",
+              "label": "United Kingdom"
+            },
+            {
+              "value": "104",
+              "label": "Canada"
+            },
+            {
+              "value": "126",
+              "label": "Germany"
+            },
+            {
+              "value": "124",
+              "label": "France"
+            },
+            {
+              "value": "983",
+              "label": "Spain"
+            },
+            {
+              "value": "205",
+              "label": "Italy"
+            },
+            {
+              "value": "115",
+              "label": "Turkey"
+            },
+            {
+              "value": "10063",
+              "label": "Brazil"
+            },
+            {
+              "value": "21",
+              "label": "China"
+            },
+            {
+              "value": "143",
+              "label": "Japan"
+            },
+            {
+              "value": "117",
+              "label": "South Korea"
+            },
+            {
+              "value": "994",
+              "label": "India"
+            },
+            {
+              "value": "213",
+              "label": "Moscow"
+            },
+            {
+              "value": "2",
+              "label": "Saint Petersburg"
+            },
+            {
+              "value": "157",
+              "label": "Minsk"
+            },
+            {
+              "value": "187",
+              "label": "Kyiv"
+            },
+            {
+              "value": "159",
+              "label": "Kazakhstan"
+            },
+            {
+              "value": "11316",
+              "label": "Almaty"
+            },
+            {
+              "value": "47",
+              "label": "Novosibirsk"
+            },
+            {
+              "value": "65",
+              "label": "Yekaterinburg"
+            },
+            {
+              "value": "54",
+              "label": "Nizhny Novgorod"
+            },
+            {
+              "value": "43",
+              "label": "Kazan"
+            },
+            {
+              "value": "39",
+              "label": "Rostov-on-Don"
+            },
+            {
+              "value": "51",
+              "label": "Samara"
+            },
+            {
+              "value": "62",
+              "label": "Krasnoyarsk"
+            },
+            {
+              "value": "66",
+              "label": "Vladivostok"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "localization",
+      "title": "Localization",
+      "fields": [
+        {
+          "key": "yandex_domain",
+          "type": "select",
+          "default_value": "yandex.com",
+          "label": "Yandex domain",
+          "help": "Yandex domain (yandex.com, yandex.ru, ...)",
+          "options": [
+            {
+              "value": "yandex.com",
+              "label": "yandex.com"
+            },
+            {
+              "value": "yandex.ru",
+              "label": "yandex.ru"
+            },
+            {
+              "value": "yandex.by",
+              "label": "yandex.by"
+            },
+            {
+              "value": "yandex.kz",
+              "label": "yandex.kz"
+            },
+            {
+              "value": "yandex.ua",
+              "label": "yandex.ua"
+            },
+            {
+              "value": "yandex.com.tr",
+              "label": "yandex.com.tr"
+            }
+          ]
+        },
+        {
+          "key": "lang",
+          "type": "select",
+          "default_value": "en",
+          "label": "Language",
+          "help": "Interface language",
+          "options": [
+            {
+              "value": "ru",
+              "label": "Russian"
+            },
+            {
+              "value": "en",
+              "label": "English"
+            },
+            {
+              "value": "uk",
+              "label": "Ukrainian"
+            },
+            {
+              "value": "be",
+              "label": "Belarusian"
+            },
+            {
+              "value": "kk",
+              "label": "Kazakh"
+            },
+            {
+              "value": "tt",
+              "label": "Tatar"
+            },
+            {
+              "value": "az",
+              "label": "Azerbaijani"
+            },
+            {
+              "value": "de",
+              "label": "German"
+            },
+            {
+              "value": "fr",
+              "label": "French"
+            },
+            {
+              "value": "it",
+              "label": "Italian"
+            },
+            {
+              "value": "es",
+              "label": "Spanish"
+            },
+            {
+              "value": "pt",
+              "label": "Portuguese"
+            },
+            {
+              "value": "tr",
+              "label": "Turkish"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "advanced_filters",
+      "title": "Advanced Filters",
+      "fields": [
+        {
+          "key": "within",
+          "type": "select",
+          "label": "Time Range",
+          "help": "Restrict results to recent time window",
+          "options": [
+            {
+              "value": "0",
+              "label": "All time"
+            },
+            {
+              "value": "77",
+              "label": "Last day"
+            },
+            {
+              "value": "1",
+              "label": "Last 2 weeks"
+            },
+            {
+              "value": "2",
+              "label": "Last month"
+            }
+          ]
+        },
+        {
+          "key": "rstr",
+          "type": "select",
+          "label": "Restriction",
+          "help": "Controls Yandex regional restriction and safe filtering.",
+          "options": [
+            {
+              "value": "true",
+              "label": "On"
+            },
+            {
+              "value": "false",
+              "label": "Off"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "pagination_talor",
+      "title": "Pagination / Talor Parameters",
+      "fields": [
+        {
+          "key": "p",
+          "type": "number",
+          "default_value": 0,
+          "label": "Page",
+          "help": "Sets the Yandex result page index."
+        },
+        {
+          "key": "render_js",
+          "type": "switch",
+          "default_value": false,
+          "help_key": "serp.fields.render_js_help",
+          "label": "Render JS",
+          "help": "Controls whether the upstream page should execute JavaScript before returning results."
+        },
+        {
+          "key": "no_cache",
+          "type": "switch",
+          "default_value": false,
+          "help_key": "serp.fields.no_cache_help",
+          "label": "No Cache",
+          "help": "When enabled, the adapter returns a fresh preview result."
+        }
+      ]
+    }
+  ],
+  "category": {
+    "key": "yandex",
+    "name": "Yandex"
+  },
+  "is_default_engine": false
+}
