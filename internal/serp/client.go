@@ -68,7 +68,14 @@ func (c *Client) Execute(ctx context.Context, token string, params map[string]an
 
 	req.Header.Set("Authorization", "Bearer "+token)
 	req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
-	req.Header.Set("Origin", "mcp")
+
+	// Set Origin based on request source (pass through detected origin)
+	origin := "mcp"
+	if source, ok := auth.SourceFromContext(ctx); ok {
+		origin = source
+	}
+	req.Header.Set("Origin", origin)
+
 	if userAgent, ok := auth.UserAgentFromContext(ctx); ok {
 		req.Header.Set("User-Agent", userAgent)
 	}
@@ -168,7 +175,14 @@ func (c *Client) ExecuteGET(ctx context.Context, endpoint string, token string, 
 
 	req.Header.Set("Authorization", "Bearer "+token)
 	req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
-	req.Header.Set("Origin", "mcp")
+
+	// Set Origin based on request source (pass through detected origin)
+	origin := "mcp"
+	if source, ok := auth.SourceFromContext(ctx); ok {
+		origin = source
+	}
+	req.Header.Set("Origin", origin)
+
 	if userAgent, ok := auth.UserAgentFromContext(ctx); ok {
 		req.Header.Set("User-Agent", userAgent)
 	}

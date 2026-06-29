@@ -33,6 +33,11 @@ func (t *ToolSet) SearchTool() mcp.Tool {
 	return mcp.Tool{
 		Name:        "search",
 		Description: "Execute a Talor SERP request. Use resources under talor://engines to inspect engine-specific parameters before calling this tool.",
+		Annotations: mcp.ToolAnnotation{
+			Title:         "Search",
+			ReadOnlyHint:  boolPtr(true),
+			OpenWorldHint: boolPtr(true),
+		},
 		InputSchema: mcp.ToolInputSchema{
 			Type: "object",
 			Properties: map[string]any{
@@ -60,6 +65,17 @@ func (t *ToolSet) SearchTool() mcp.Tool {
 					"description": "complete returns the full response envelope, compact removes common metadata fields when possible.",
 					"enum":        []string{"complete", "compact"},
 				},
+			},
+		},
+		OutputSchema: mcp.ToolOutputSchema{
+			Type: "object",
+			Properties: map[string]any{
+				"ok":      map[string]any{"type": "boolean", "description": "Whether the request succeeded"},
+				"status":  map[string]any{"type": "integer", "description": "HTTP status code"},
+				"engine":  map[string]any{"type": "string", "description": "Engine used for the search"},
+				"request": map[string]any{"type": "object", "description": "Request metadata"},
+				"data":    map[string]any{"description": "Search results data returned by the upstream API"},
+				"raw":     map[string]any{"type": "string", "description": "Raw upstream response text when structured data is unavailable"},
 			},
 		},
 	}
@@ -134,7 +150,7 @@ func (t *ToolSet) HandleSearch(ctx context.Context, request mcp.CallToolRequest)
 		return mcp.NewToolResultError(body), nil
 	}
 
-	return mcp.NewToolResultText(body), nil
+	return mcp.NewToolResultStructured(result, body), nil
 }
 
 func coerceMap(value any) map[string]any {
@@ -169,4 +185,8 @@ func toString(value any) string {
 		return ""
 	}
 	return fmt.Sprintf("%v", value)
+}
+
+func boolPtr(b bool) *bool {
+	return &b
 }

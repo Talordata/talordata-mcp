@@ -12,6 +12,10 @@ func (t *ToolSet) StatisticsTool() mcp.Tool {
 	return mcp.Tool{
 		Name:        "statistics",
 		Description: "Query SERP statistics from /pay_package_view/v1/serp/statistics.",
+		Annotations: mcp.ToolAnnotation{
+			Title:        "Statistics",
+			ReadOnlyHint: boolPtr(true),
+		},
 		InputSchema: mcp.ToolInputSchema{
 			Type: "object",
 			Properties: map[string]any{
@@ -36,6 +40,17 @@ func (t *ToolSet) StatisticsTool() mcp.Tool {
 				},
 			},
 			Required: []string{"start_date", "end_date"},
+		},
+		OutputSchema: mcp.ToolOutputSchema{
+			Type: "object",
+			Properties: map[string]any{
+				"ok":      map[string]any{"type": "boolean", "description": "Whether the request succeeded"},
+				"status":  map[string]any{"type": "integer", "description": "HTTP status code"},
+				"tool":    map[string]any{"type": "string", "description": "Tool name"},
+				"request": map[string]any{"type": "object", "description": "Request metadata"},
+				"data":    map[string]any{"description": "Statistics data returned by the upstream API"},
+				"raw":     map[string]any{"type": "string", "description": "Raw upstream response text when structured data is unavailable"},
+			},
 		},
 	}
 }

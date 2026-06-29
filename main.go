@@ -16,6 +16,7 @@ import (
 
 	"talordata-mcp/internal/auth"
 	"talordata-mcp/internal/engines"
+	"talordata-mcp/internal/oauthserver"
 	"talordata-mcp/internal/serp"
 	"talordata-mcp/tools"
 
@@ -56,6 +57,7 @@ type app struct {
 	cfg      config
 	registry *engines.Registry
 	client   *serp.Client
+	oauth    *oauthserver.Server
 }
 
 func main() {
@@ -73,6 +75,7 @@ func main() {
 		cfg:      cfg,
 		registry: registry,
 		client:   serp.NewClient(cfg.Endpoint, cfg.Timeout),
+		oauth:    oauthserver.New(serverName),
 	}
 	toolSet := tools.New(registry, application.client, cfg.HistoryEndpoint, cfg.StatisticsEndpoint)
 
@@ -81,6 +84,7 @@ func main() {
 		serverVersion,
 		server.WithToolCapabilities(true),
 		server.WithResourceCapabilities(true, true),
+		server.WithOutputSchemaValidation(),
 		server.WithRecovery(),
 	)
 
@@ -240,6 +244,8 @@ func (a *app) listEnginesTool() mcp.Tool {
 	return mcp.NewTool(
 		"list_engines",
 		mcp.WithDescription("List supported Talor SERP engines, categories, default engine, and schema resource URIs."),
+		mcp.WithTitleAnnotation("List Engines"),
+		mcp.WithReadOnlyHintAnnotation(true),
 	)
 }
 
@@ -287,6 +293,18 @@ func (a *app) routes(mcpHandler http.Handler) http.Handler {
 			a.handleRoot(w, r)
 		case auth.HealthPath(r.URL.Path):
 			a.handleHealth(w, r)
+		case strings.HasPrefix(r.URL.Path, oauthserver.ProtectedResourceMetadataPath):
+			a.oauth.HandleProtectedResourceMetadata(w, r)
+		case r.URL.Path == oauthserver.AuthorizationServerPath:
+			a.oauth.HandleAuthorizationServerMetadata(w, r)
+		case r.URL.Path == oauthserver.OpenIDConfigurationPath:
+			a.oauth.HandleOpenIDConfiguration(w, r)
+		case r.URL.Path == oauthserver.RegisterPath:
+			a.oauth.HandleRegister(w, r)
+		case r.URL.Path == oauthserver.AuthorizePath:
+			a.oauth.HandleAuthorize(w, r)
+		case r.URL.Path == oauthserver.TokenPath:
+			a.oauth.HandleToken(w, r)
 		case auth.MCPPath(r.URL.Path):
 			protectedMCP.ServeHTTP(w, r)
 		default:
@@ -309,9 +327,20 @@ func (a *app) handleRoot(w http.ResponseWriter, _ *http.Request) {
 			"accepted": []string{
 				"Authorization: Bearer <user-token>",
 				"X-Talor-Serp-Token: <user-token>",
+				"?X-Talor-Serp-Token=<user-token>",
+				"?token=<user-token>",
 				"/{user-token}/mcp",
 			},
 			"platform_resolution": "agent-platform is not inferred from inbound requests",
+			"oauth": map[string]any{
+				"authorization_server": oauthserver.AuthorizationServerPath,
+				"authorize_path":       oauthserver.AuthorizePath,
+				"token_path":           oauthserver.TokenPath,
+				"register_path":        oauthserver.RegisterPath,
+			},
+		},
+		"client_hints": map[string]any{
+			"user_agent": "recommended: AI clients should preserve and forward their User-Agent so the upstream API can identify the originating client",
 		},
 		"engine_count": len(a.registry.EngineKeys()),
 	})

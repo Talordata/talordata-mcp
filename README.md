@@ -6,6 +6,11 @@
     <strong>Give MCP clients access to Talor SERP search, history, and statistics</strong>
   </p>
   <p>
+    <a href="https://smithery.ai/@turnbaibian/talordata1">
+      <img src="https://smithery.ai/badge/@turnbaibian/talordata1" alt="Smithery" />
+    </a>
+  </p>
+  <p>
     Built with <code>mark3labs/mcp-go</code>, backed by local engine schemas, and designed for
     streamable HTTP deployment.
   </p>

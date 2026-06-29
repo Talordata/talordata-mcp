@@ -15,6 +15,10 @@ func (t *ToolSet) HistoryTool() mcp.Tool {
 	return mcp.Tool{
 		Name:        "history",
 		Description: "Query SERP usage history from /accounts/v1/serp/history.",
+		Annotations: mcp.ToolAnnotation{
+			Title:        "History",
+			ReadOnlyHint: boolPtr(true),
+		},
 		InputSchema: mcp.ToolInputSchema{
 			Type: "object",
 			Properties: map[string]any{
@@ -51,6 +55,17 @@ func (t *ToolSet) HistoryTool() mcp.Tool {
 					"type":        "string",
 					"description": "Optional timezone header value for accounts API, for example Asia/Shanghai or +08:00.",
 				},
+			},
+		},
+		OutputSchema: mcp.ToolOutputSchema{
+			Type: "object",
+			Properties: map[string]any{
+				"ok":      map[string]any{"type": "boolean", "description": "Whether the request succeeded"},
+				"status":  map[string]any{"type": "integer", "description": "HTTP status code"},
+				"tool":    map[string]any{"type": "string", "description": "Tool name"},
+				"request": map[string]any{"type": "object", "description": "Request metadata"},
+				"data":    map[string]any{"description": "History data returned by the upstream API"},
+				"raw":     map[string]any{"type": "string", "description": "Raw upstream response text when structured data is unavailable"},
 			},
 		},
 	}
@@ -129,5 +144,5 @@ func buildGETToolResult(name string, resp *serp.Response) *mcp.CallToolResult {
 	if !resp.OK {
 		return mcp.NewToolResultError(body)
 	}
-	return mcp.NewToolResultText(body)
+	return mcp.NewToolResultStructured(result, body)
 }
